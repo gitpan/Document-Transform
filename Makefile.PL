@@ -12,10 +12,8 @@ my %WriteMakefileArgs = (
   'ABSTRACT' => 'Pull and transform documents from a NoSQL backend',
   'AUTHOR' => 'Nicholas R. Perez <nperez@cpan.org>',
   'BUILD_REQUIRES' => {
-    'Data::Dumper' => '0',
-    'FindBin' => '0',
-    'IO::All' => '0',
-    'JSON' => '0',
+    'Digest::SHA1' => '0',
+    'Test::Moose' => '0',
     'Test::More' => '0'
   },
   'CONFIGURE_REQUIRES' => {
@@ -27,19 +25,20 @@ my %WriteMakefileArgs = (
   'NAME' => 'Document::Transform',
   'PREREQ_PM' => {
     'Data::DPath' => '0',
+    'Devel::PartialDump' => '0',
     'MongoDB' => '0',
+    'MongoDBx::AutoDeref' => '0',
     'Moose' => '0',
     'Moose::Role' => '0',
     'Moose::Util::TypeConstraints' => '0',
     'MooseX::Params::Validate' => '0',
-    'MooseX::Types' => '0',
     'MooseX::Types::Moose' => '0',
     'MooseX::Types::Structured' => '0',
     'Throwable::Error' => '0',
     'Try::Tiny' => '0',
     'namespace::autoclean' => '0'
   },
-  'VERSION' => '1.110400',
+  'VERSION' => '1.110530',
   'test' => {
     'TESTS' => 't/*.t'
   }

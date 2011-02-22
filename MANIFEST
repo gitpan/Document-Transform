@@ -1,3 +1,4 @@
+Changes
 LICENSE
 MANIFEST
 META.json
@@ -10,10 +11,7 @@ lib/Document/Transform/Backend/MongoDB.pm
 lib/Document/Transform/Role/Backend.pm
 lib/Document/Transform/Role/Transformer.pm
 lib/Document/Transform/Transformer.pm
-lib/Document/Transform/Types.pm
 t/00-load.t
 t/01-basic.t
-t/data/documents.js
-t/data/transforms.js
 t/release-pod-syntax.t
 weaver.ini
